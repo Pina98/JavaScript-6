@@ -1,1 +1,1 @@
-# JavaScript-6
+# JavaScript loop - 6
