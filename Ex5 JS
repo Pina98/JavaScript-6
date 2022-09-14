@@ -1,0 +1,11 @@
+let i = 0
+let n = 0
+
+do {
+    n = parseFloat(prompt('Digite um número (Digite 0 para finalizar):'));
+
+    i = n + i
+
+} while (n != 0);
+
+document.write(`O Total é: ${i}`)

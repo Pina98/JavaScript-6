@@ -1,0 +1,48 @@
+let num = 0
+let op
+let age = 0
+
+
+let sexo = 0
+
+let emocao
+let Calmo = 0
+
+
+let mulhernervosa = 0
+let homemagessivo = 0
+let outrocalmo = 0
+let nervoso40 = 0
+let calmo18 = 0
+
+
+while(num < 3){
+    num ++
+    age = (parseInt(prompt('Digite sua Idade: ')));
+    sexo = (parseInt(prompt('Qual é o seu gênero? \n\n1-homem \n2- mulher \n3- outros')));
+    emocao = parseInt(prompt('voê é um: \n1-Calmo \n2-nervoso \n3-Agressivo'));
+    if(emocao == 1){
+        Calmo++
+    }
+    else if(sexo == 2 && emocao == 2){
+        mulhernervosa++
+    }
+    else if(sexo == 1 && emocao == 3){
+        homemagessivo++
+    }
+    else if(sexo == 3 && emocao == 1){
+        outrocalmo++
+    }
+    if(age > 40 && emocao == 2){
+        nervoso40++
+    }
+    else if(age < 18 && emocao == 1){
+        calmo18++
+    }
+}
+document.write(`Há no total ${Calmo} pessoas calmas`);
+document.write(`<br> Há no total ${mulhernervosa} mulheres nervosas`);
+document.write(`<br> Há no total ${homemagessivo}  homens agressivos`);
+document.write(`<br> Há no total ${outrocalmo}  outros calmos`);
+document.write(`<br> Há no total ${nervoso40}  pessoas nervosas com mais de 40 anos`);
+document.write(`<br> Há no total ${calm18}     pessoas calmas com menos de 18 anos`);

@@ -1,0 +1,17 @@
+let n = 0
+let n1 = 0
+let n2 = 0
+
+while(n != -99){
+   
+    n = (parseInt(prompt("Digite sua idade: (digite -99 para terminar)")));
+    if(n < 21){
+        n1 ++
+    }
+    else if(n > 50){
+        n2 ++
+    }
+
+}
+document.write(`Total de 21 anos: ${n1}`);
+document.write(`<br> Total de 50 anos: ${n2}`);
